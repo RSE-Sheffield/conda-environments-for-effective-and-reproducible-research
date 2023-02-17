@@ -78,7 +78,6 @@ event).
 > - How to share your Conda environment.
 > - How to manage packages that have GPU dependencies.
 >
-> This course will be run online.
 >
 > ### Attendance to our Courses
 >
