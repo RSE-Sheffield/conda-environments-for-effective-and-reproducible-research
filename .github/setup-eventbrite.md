@@ -60,7 +60,7 @@ event).
 ### Description
 
 > How can we undertake research work in a consistent and reproducible computing environment?
-> This is an intermediate course, teaching the use of Conda virtual environments for reproducible research envuironments
+> This is an intermediate course, teaching the use of Conda virtual environments for reproducible research environments
 > when using Python for research and data analysis. These skills are essential for collaborative research teams.
 > This event is for University of Sheffield researchers and research students only. Please register with an @shef.ac.uk
 > or @sheffield.ac.uk email address to ensure your ticket request is accepted.
