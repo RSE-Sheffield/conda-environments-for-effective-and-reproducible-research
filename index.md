@@ -20,7 +20,7 @@ Python project specific software environments that facilitate reproducible (data
 >
 > This is an intermediate lesson and assumes familiarity with:
 >
-> - Basic shell commands (bash (linux), zsh (MacOS) or Powershell (Windows)) e.g. from material covered in [The Unix Shell](http://swcarpentry.github.io/shell-novice)
+> - Basic shell commands (bash/zsh (Linux/MacOS); Powershell (Windows)) e.g. from material covered in [The Unix Shell](http://swcarpentry.github.io/shell-novice)
 > - Some knowledge of Python e.g. material covered in [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder)
 >
 {: .prereq}
