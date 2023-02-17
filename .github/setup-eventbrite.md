@@ -80,6 +80,8 @@ event).
 >
 > This course will be run online.
 >
+> ### Attendance to our Courses
+>
 > We are delighted to be able to make free at point of use training available to the research community, to enable
 > better software and more open, reproducible research. However, free at point of use training is not free. The cost of
 > a course can easily run to thousands of pounds, if preparation costs are taken into account.
