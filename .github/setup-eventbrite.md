@@ -21,19 +21,19 @@ dates and times.
 
 The following fields should be entered into each field on the **Basic Info** page.
 
-| Field               | Value                                                     |
-|:--------------------|-----------------------------------------------------------|
-| Event Title         | Git & GitHub through GitKraken - from Zero to Hero!       |
-| Organiser           | RSE Sheffield                                             |
-| Type                | Class, Training, or Workshop                              |
-| Category            | Science & Technology                                      |
-| Tags                | git, github, gitkraken                                    |
-| Location            | Online Event (unless otherwise)                           |
-| Date and Time       | Single Event if running over one day, otherwise Recurring |
-| Event Starts        | Start Date/Time (always Single Event), start is usually 09:30 |
-| Event Ends          | End Date/Time if one day finish is usually 16:30, if two 13:00 the following day.  |
-| Time Zone           | United Kingdom Time                                       |
-| Event Page Language | English (UK)                                              |
+| Field               | Value                                                                     |
+|:--------------------|---------------------------------------------------------------------------|
+| Event Title         | Introduction to Conda for (Data) Scientists                               |
+| Organiser           | RSE Sheffield                                                             |
+| Type                | Class, Training, or Workshop                                              |
+| Category            | Science & Technology                                                      |
+| Tags                | conda, python, research, computing, virtual_environments, reproducibility |
+| Location            | Online Event (unless otherwise)                                           |
+| Date and Time       | Single Event if running over one day, otherwise Recurring                 |
+| Event Starts        | Start Date/Time (always Single Event), start is usually 09:30             |
+| Event Ends          | End Date/Time if one day finish is usually 13:30.                         |
+| Time Zone           | United Kingdom Time                                                       |
+| Event Page Language | English (UK)                                                              |
 
 
 
