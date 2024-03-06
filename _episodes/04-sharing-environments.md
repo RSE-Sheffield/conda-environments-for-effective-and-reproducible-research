@@ -146,7 +146,7 @@ we see that these five packages result in an environment with roughly 80 depende
 > is the [build variant hash](https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html#differentiating-packages-built-with-different-variants). This appears when the package is different
 > for different operating systems. The implication is that an environment file that contains a build variant
 > hash for one or more of the packages cannot be used on a different operating system to the one it
-> was created on.
+> was created on. 
 >
 {: .callout}
 
@@ -189,20 +189,30 @@ $ git commit -m "Updates machine-learning-39-env.yml based on environment histor
 {: .language-bash}
 
 > ## Excluding build variant hash
->
-> In short: to make sure others can reproduce your environment independent of the operating system they use,
-> make sure to add the `--from-history` argument to the `conda env export` command. This will **only** include the
-> packages you explicitly installed and the version you requested to be installed. For example if you installed
+
+> There are two options to exclude the build variant hash from the .yml file export so that your environment can be 
+> reproduced independent of the operating system.  
+> Add the `--from-history` **or** `--no-build` argument to the `conda env export` command. See below for explanation of these arguments and when to use them.
+> 
+> ### The `--from-history` argument 
+> This will **only** include the packages you explicitly installed and the version you requested to be installed. For example if you installed
 > `numpy-1.24` this will be listed, but if you installed `pandas` without a version and therefore installed the latest
 > then `pandas` will be listed in your environment file without a version number so anyone using your environment file
 > will get the latest version which may not match the version you used. This is one reason to explicitly state the
-> version of a package you wish to install.
->
-> Without `--from-history` the output may on some occasions include the build variant hash (which can alternatively be
-> removed by editing the environment file). These are often specific to the operating system and including them in your
-> environment file means it will not necessarily work if someone is using a different operating system.
+> version of a package you wish to install.  
 >
 > **Be aware that `--from-history` will omit any packages you have installed using `pip`. This may be [addressed in future releases](https://github.com/conda/conda/pull/11532). In the meantime, editing your exported environment files by hand is sometimes the best option.**
+> 
+> ### The `--no-build` argument 
+> Similarly to the `--from-history` argument, the `--no-build` argument removes build variant hash from the .yml file export.
+> As opposed to the `--from-history` argument, the `--no-build` argument:  
+>   - **includes all packages installed using `pip` in the .yml file**
+>   - specifies the version number of every package installed in the environment.
+> 
+> Without `--from-history` or `--no-build` arguments, the output may on some occasions include the build variant hash (which can alternatively be
+> removed by editing the environment file). These are often specific to the operating system and including them in your
+> environment file means it will not necessarily work if someone is using a different operating system.
+> 
 {: .callout}
 
 > ## Create a new environment from a YAML file.
